@@ -1,0 +1,7 @@
+Microservice 1
+Node JS express + database
+stores and refreshes information in/from database
+
+Microservice 2
+Python + Flask
+asks input and sends posts it to other microservice
