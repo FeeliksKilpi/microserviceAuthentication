@@ -28,7 +28,7 @@ app.post('/authenticate', (req, res) => {
   let email = req.body.email;
   let password = req.body.password;
   let login = handleLogin(email, password);
-  res.status(200).json({loginstatus: login}).send();
+  res.status(200).json({status: login}).send();
   handleLogout();
 });
 

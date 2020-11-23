@@ -27,7 +27,7 @@ function handleLogin(email, password) {
         }
         
       });
-      
+    return "success";
   };
 
 function handleLogout() {
