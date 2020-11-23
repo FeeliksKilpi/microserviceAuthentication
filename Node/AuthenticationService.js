@@ -27,9 +27,9 @@ app.post('/authenticate', (req, res) => {
   const { handleLogin, handleLogout } = require('./handleAuth');
   let email = req.body.email;
   let password = req.body.password;
-  let login = handleLogin(email, password);
-  res.status(200).json({status: login}).send();
-  handleLogout();
+  handleLogin(email, password);
+  res.status(200).json({status: "success"}).send();
+  //handleLogout();
 });
 
 // Run app on port 3000
