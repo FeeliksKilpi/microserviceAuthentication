@@ -34,7 +34,7 @@ app.post('/authenticate', (req, res) => {
 
 // Run app on port 3000
 app.listen(port, () => {
-  console.log(`Users Service running at http://localhost:${port}`)
+  console.log(`Authentication server running at: http://localhost:${port}`)
 })
 
 // To request authentication with curl, try the following example:
